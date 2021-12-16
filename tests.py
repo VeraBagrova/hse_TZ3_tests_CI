@@ -53,6 +53,4 @@ class AnyTest(unittest.TestCase):  # на оценку 4 - тестируем у
 
 if __name__ == "__main__":
     unittest.main()
- # парапарапам
- # hf,jnfq hf,jnfq gj;fkeqcnf
 
