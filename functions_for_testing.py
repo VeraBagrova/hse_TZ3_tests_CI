@@ -36,3 +36,4 @@ def read_file(file_name):
 def main(file_name):
     lst = read_file(file_name)
     return minim(lst), maxim(lst), summa(lst), compose(lst)
+# пум пум
