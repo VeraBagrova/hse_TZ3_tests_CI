@@ -1,2 +1,3 @@
 # hse_TZ3_tests_CI
-test simple program
+![workflow](https://github.com/SunshineVer
+/hse_TZ3_tests_CI/actions/workflows/checks.yml/badge.svg)
