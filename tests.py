@@ -35,7 +35,7 @@ class TestTime(unittest.TestCase):  # тесты для проверки ско�
                     start = time.time()
                     main('test_time_input.txt')
                     end = time.time()
-                    self.assertTrue(end-start < 1)  # ограничение по времени 0.1 секунда
+                    self.assertTrue(end-start < 0.1)  # ограничение по времени 0.1 секунда
 
 
 class AnyTest(unittest.TestCase):  # на оценку 4 - тестируем усножение на конкретных числах
