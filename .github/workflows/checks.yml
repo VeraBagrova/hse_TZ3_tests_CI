@@ -25,3 +25,8 @@ jobs:
           pip install -r requirements.txt
       - name: Run Test
         run: python -m unittest discover .
+      - name: send default message
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
