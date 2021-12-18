@@ -35,20 +35,13 @@ class TestTime(unittest.TestCase):  # тесты для проверки ско�
                     start = time.time()
                     main('test_time_input.txt')
                     end = time.time()
-                    self.assertTrue(end-start < 1)  # ограничение по времени 0.1 секунда
+                    self.assertTrue(end-start < 0.1)  # ограничение по времени 0.1 секунда
 
 
-class AnyTest(unittest.TestCase):  # на оценку 4 - тестируем усножение на конкретных числах
-    def test_case(self):
-        test_cases = [
-            ([1, 0, -2], 0),
-            ([1, 3, -2], -6),
-            ([-1, 2, -2], 4),
-            ([-1, -1, -1], -1),
-        ]
-
-        for n, result in test_cases:
-            self.assertEqual(compose(n), result)
+class AnyTest(unittest.TestCase):  # на оценку 4 - тестируем ошибку при неверном формате данных в файле
+    def test_error(self):
+        with self.assertRaises(ValueError):
+            read_file('test_error.txt')
 
 
 if __name__ == "__main__":
