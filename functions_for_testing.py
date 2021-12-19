@@ -28,7 +28,7 @@ def compose(array: list):
         return 'слишком большой объем данных, невозможно выполнить действия'
 
 
-def read_file(file_name):
+def read_file(file_name):  # операции выполняются с целыми числами
     with open(file_name, 'r', encoding='utf-8') as file:
         return list(map(int, file.read().split()))
 
